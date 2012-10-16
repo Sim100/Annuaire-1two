@@ -1,0 +1,45 @@
+form { margin: 0px }
+
+.header_top_banner { text-align: center; padding-top: 5px; padding-bottom: 5px }
+
+.hero-unit { padding: 15px } 
+.hero-unit p { font-size: 14px }
+
+.home_cat_title_height { height: 45px }
+
+.footer { text-align: center; font-size: 12px }
+.footer hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+  border-style: solid none;
+  border-width: 1px 0;
+  margin: 5px 0;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 0;
+  padding-bottom: 12px;
+  color: #999999;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 0;
+  padding-bottom: 12px;
+  color: #999999;
+}
+
+.img-polaroid {
+  margin-right: 7px; margin-bottom: 5px;
+}
+
+hr {
+  margin: 5px 0;
+}

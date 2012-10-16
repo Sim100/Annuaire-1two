@@ -1,0 +1,11 @@
+RewriteEngine on
+
+RewriteCond %{HTTP:Host} ^1two\.org$
+RewriteRule ^(.*) http://www.1two.org [NC,R=302]
+
+RewriteRule ^(.+)-([0-9]+)-([0-9]+)\.html$ /index.php?cat=$1&id=$2&page=$3 [L]
+RewriteRule soumettre-un-site-([0-9]+)\.html$ /soumettre-un-site.php?id=$1 [L]
+RewriteRule ^site-(.+)-([0-9]+)$ /site.php?site_id=$2 [L]
+
+RewriteRule ^mon_compte$ /mon_compte.php
+RewriteRule ^mon_compte:([a-z]+)$ /mon_compte.php?action=$1

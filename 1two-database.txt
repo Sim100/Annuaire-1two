@@ -1,0 +1,63 @@
+--
+-- Table structure for table `1two_annuaire_sites`
+--
+
+CREATE TABLE IF NOT EXISTS `1two_annuaire_sites` (
+  `compteur` int(100) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL DEFAULT '',
+  `url` varchar(200) NOT NULL DEFAULT '',
+  `valid` int(6) NOT NULL DEFAULT '0',
+  `description` text NOT NULL,
+  `mail` varchar(100) NOT NULL DEFAULT '',
+  `category` varchar(50) NOT NULL DEFAULT '',
+  `date_ins` date NOT NULL DEFAULT '0000-00-00',
+  `owner` varchar(20) NOT NULL DEFAULT '',
+  `hour_ins` time NOT NULL DEFAULT '00:00:00',
+  `password` varchar(50) NOT NULL,
+  `premium` int(3) NOT NULL DEFAULT '0',
+  `prem_date` date NOT NULL DEFAULT '0000-00-00',
+  `premium_recall` int(3) NOT NULL DEFAULT '0',
+  `date_val` date NOT NULL DEFAULT '0000-00-00',
+  `prem_val` date NOT NULL DEFAULT '0000-00-00',
+  `topic_posted` int(6) NOT NULL DEFAULT '0',
+  `photo` varchar(150) NOT NULL,
+  `hour_val` time NOT NULL DEFAULT '00:00:00',
+  PRIMARY KEY (`compteur`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+
+--
+-- Table structure for table `1two_annuaire_cat`
+--
+
+CREATE TABLE IF NOT EXISTS `1two_annuaire_cat` (
+  `name` varchar(100) NOT NULL default '',
+  `description` varchar(200) NOT NULL default '',
+  `inside` int(20) NOT NULL default '0',
+  `compteur` int(20) NOT NULL auto_increment,
+  PRIMARY KEY  (`compteur`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=437 ;
+
+--
+-- Dumping data for table `1two_annuaire_cat`
+--
+
+INSERT INTO `1two_annuaire_cat` (`name`, `description`, `inside`, `compteur`) VALUES
+('Achats / Ventes', 'Catégorie Achats / Ventes', 0, 1),
+('Actualités et médias', '', 0, 28),
+('Arts et culture', 'Catégorie Arts et culture', 0, 39),
+('Centres d''intêrets et hobbies', '', 0, 52),
+('Divertissement', 'Catégorie Divertissement', 0, 67),
+('Economie et finances', 'Catégorie Economie et finances', 0, 75),
+('Emploi', 'Catégorie Emploi', 0, 89),
+('Enseignement et formation', 'Catégorie Enseignement et formation', 0, 97),
+('Famille et santé', '', 0, 108),
+('Immobilier', 'Catégorie Immobilier', 0, 121),
+('Informatique et Internet', 'Catégorie Informatique et Internet', 0, 129),
+('Institutions et politique', 'Catégorie Institutions et politique', 0, 153),
+('Rencontres', 'Catégorie Rencontres', 0, 166),
+('Sciences humaines', 'Catégorie Sciences humaines', 0, 172),
+('Sport', 'Catégorie Sport', 0, 183),
+('Téléchargement', '', 0, 199),
+('Voyages / Tourisme', 'Catégorie Voyages / Tourisme', 0, 211),
+('XXX-Adulte', '', 0, 291);
